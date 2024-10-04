@@ -10,7 +10,7 @@ const waitForNewCode = async () => {
 
     // Bucle que espera hasta que un código esté disponible
     while (true) {
-        await new Promise(resolve => setTimeout(resolve, 5000));  // Espera 5 segundos
+        await new Promise(resolve => setTimeout(resolve, 10000));  // Espera 5 segundos
         nuevoCodigo = await Codigo.findOne({});
 
         // Si el código existe, rompe el bucle
