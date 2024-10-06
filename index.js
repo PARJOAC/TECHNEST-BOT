@@ -83,7 +83,7 @@ client.once(Events.ClientReady, async (client) => {
         } catch (error) {
             console.error("Error en la verificación/envío de ofertas:", error);
         }
-    }, 1000);
+    }, 1500);
 
     client.user.setPresence({
         activities: [{
