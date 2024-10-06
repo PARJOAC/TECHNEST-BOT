@@ -71,7 +71,7 @@ const telegramClientInit = async () => {
 // Función para buscar mensajes en un grupo de Telegram
 const busquedaMensaje = async (telegram) => {
     const groupId = '@OfertasSensatas';
-    const mensaje = await telegram.getMessages(groupId, { limit: 7 });
+    const mensaje = await telegram.getMessages(groupId, { limit: 5 });
     const mensajeFiltrado = mensaje.filter(m => 
         m.className === 'Message' && 
         m.classType === 'constructor' && 
