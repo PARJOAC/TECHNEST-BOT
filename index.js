@@ -38,7 +38,10 @@ require("dotenv").config();
 const { ActivityType, EmbedBuilder, Events } = require("discord.js");
 const Recordatorio = require('./schemas/recordatorios.js');
 const Ofertas = require('./schemas/ofertas.js');
+const Huelgas = require('./schemas/huelgas.js');
 const { busquedaMensaje, telegramClientInit } = require('./inicializacion_eventos/telegram.js');
+const axios = require('axios');
+const cheerio = require('cheerio');
 const moment = require('moment-timezone');
 
 client.once(Events.ClientReady, async (client) => {
@@ -92,6 +95,59 @@ client.once(Events.ClientReady, async (client) => {
         }],
         status: 'online',
     });
+
+
+    setInterval(async () => {
+        try {
+            const response = await axios.get('https://www.sindicatodeestudiantes.net/index.php/noticias/movimiento-estudiantil');
+            const $ = cheerio.load(response.data);
+    
+            const huelga_texto = $('.card-body .card-title a').first();
+            const titulo = huelga_texto.text().trim();
+            const enlace = huelga_texto.attr('href');
+            const huelga_imagen = $('.card a img').first();
+            const imagen = huelga_imagen.attr('src');
+    
+            const huelga_p = $('.card-body .article-index-wrap p').eq(1);
+            const p = huelga_p.text().trim();  
+    
+            let lastHuelga = await Huelgas.findOne({}).exec();
+    
+            if (!lastHuelga) {
+                lastHuelga = new Huelgas({
+                    titulo_ult: ""
+                });
+                await lastHuelga.save();
+            }
+    
+            if (lastHuelga.titulo_ult !== titulo) {
+
+                const trimmedUrl = imagen.split('.jpg')[0] + '.jpg';
+
+                const channel = client.channels.cache.get(process.env.HUELGA_CANAL);
+                await channel.send({
+                    embeds: [
+                        new EmbedBuilder()
+                            .setTitle("📩 ¡Sindicato de estudiantes ha enviado un mensaje! 📩")
+                            .setDescription(`**${titulo}**\n\n${p}\n`)
+                            .setColor("Red")
+                            .setAuthor({ name: 'Sindicato de estudiantes', iconURL: 'https://www.sindicatodeestudiantes.net//favicon-32x32.png', url: 'https://www.sindicatodeestudiantes.net' })
+                            .setTimestamp()
+                            .setFooter({ text: 'Bot realizado por ACPARJO', iconURL: client.user.displayAvatarURL() })
+                            .setThumbnail(`https://www.sindicatodeestudiantes.net//favicon-32x32.png`)
+                            .setURL(`https://www.sindicatodeestudiantes.net${enlace}`)
+                            .setImage(`https://www.sindicatodeestudiantes.net/${trimmedUrl}`)
+                    ]
+                });
+
+                lastHuelga.titulo_ult = titulo;
+                await lastHuelga.save();
+            }
+        } catch (error) {
+            console.error('Error en la función de intervalo:', error);
+        }
+    }, 10000);
+
 
     const now = moment().tz('Europe/Madrid').toDate();
     const reminders = await Recordatorio.find({ time: { $gt: now } });
