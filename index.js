@@ -31,6 +31,7 @@ const client = new Client({
     allowedMentions: {
         parse: ['users', 'roles'],
         repliedUser: true,
+    }
 });
 
 client.commands = new Collection();
