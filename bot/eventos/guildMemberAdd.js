@@ -4,8 +4,8 @@ module.exports = {
     once: false,
     async execute(member, client) {
 
-        const guild = client.guilds.cache.get(process.env.GUILD_ID);
-        const channel = client.channels.cache.get(process.env.BIENVENIDA_CANAL);
+        const guild = await client.guilds.cache.get(process.env.GUILD_ID);
+        const channel = await client.channels.cache.get(process.env.BIENVENIDA_CANAL);
         const user = await client.users.cache.get(member.id);
 
         const embedBienvenida = new EmbedBuilder()
