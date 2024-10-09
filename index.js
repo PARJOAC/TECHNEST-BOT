@@ -28,7 +28,9 @@ const client = new Client({
         Partials.ThreadMember
     ],
     shards: "auto",
-    allowedMentions: { repliedUser: true },
+    allowedMentions: {
+        parse: ['users', 'roles'],
+        repliedUser: true,
 });
 
 client.commands = new Collection();
