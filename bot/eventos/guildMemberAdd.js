@@ -6,8 +6,8 @@ module.exports = {
 
         const guild = client.guilds.cache.get(process.env.GUILD_ID);
         const channel = client.channels.cache.get(process.env.BIENVENIDA_CANAL);
+        const user = await client.users.cache.get(member.id);
 
-        const user = client.users.cache.get(member.id);
         const embedBienvenida = new EmbedBuilder()
         .setColor("#fe81fe")
         .setTitle(`<a:peepopumpkindance:1287119445659091037> ¡Bienvenido a TechNest! ¡Nos Alegra que Estés Aquí ${user.username}! <a:peepopumpkindance:1287119445659091037>`)
