@@ -81,8 +81,11 @@ client.once(Events.ClientReady, async (client) => {
 
       // Si la oferta es nueva, procesar la fecha y hora
       const timestamp = mensaje.date * 1000;
-      const fecha = moment(timestamp).format("DD/MM/YYYY");
-      const hora = moment(timestamp).format("HH:mm");
+      const timestampAjustado = moment(timestamp).add(2, 'hours');  // Sumar 2 horas al timestamp
+
+      const fecha = timestampAjustado.format("DD/MM/YYYY");  // Obtener la fecha ajustada
+      const hora = timestampAjustado.format("HH:mm");        // Obtener la hora ajustada
+
 
       // Obtener el canal de Discord donde se enviarán las ofertas
       const channel = client.channels.cache.get(process.env.OFERTAS_CANAL);
