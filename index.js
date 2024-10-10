@@ -251,7 +251,7 @@ async function main(client) {
   await client
     .login(process.env.BOT_TOKEN)
     .then(console.log("Sesión iniciada."));
-  await Errores();
+  //await Errores();
   await Mongo();
   await KeepAlive();
   await Eventos(client);
