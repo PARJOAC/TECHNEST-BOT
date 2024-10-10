@@ -89,22 +89,20 @@ client.once(Events.ClientReady, async (client) => {
 
       // Enviar el mensaje al canal con la oferta más reciente y la imagen adjunta
       if (mensaje.media && mensaje.media.photo) {
+        const attachment = new AttachmentBuilder("./inicializacion_eventos/imagenes/imagenOferta.jpg");
         await channel.send({
           embeds: [
             new EmbedBuilder()
               .setTitle("🔥 ¡Nueva oferta disponible! 🔥")
               .setDescription(`${mensaje.message}`)
               .setColor("Red")
+              .setImage('attachment://imagenOferta.jpg')
               .setFooter({
                 text: "Oferta del día " + fecha + " a las " + hora,
                 iconURL: client.user.displayAvatarURL(),
               }),
           ],
-          files: [
-            new AttachmentBuilder(
-              "./inicializacion_eventos/imagenes/imagenOferta.jpg"
-            ),
-          ],
+          files: [attachment],
         });
       } else {
         await channel.send({
