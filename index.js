@@ -56,6 +56,7 @@ const {
 const axios = require("axios");
 const cheerio = require("cheerio");
 const moment = require("moment-timezone");
+const fs = require("fs").promises;
 
 client.once(Events.ClientReady, async (client) => {
   let telegram = await telegramClientInit();
@@ -92,6 +93,21 @@ client.once(Events.ClientReady, async (client) => {
 
       // Enviar el mensaje al canal con la oferta más reciente y la imagen adjunta
       if (mensaje.media && mensaje.media.photo) {
+          try {
+            // Descargar el archivo de la imagen usando `downloadMedia`
+            const archivoBytes = await telegram.downloadMedia(
+              mensaje.media
+            );
+      
+            // Guardar la imagen en el sistema de archivos de manera asíncrona
+            await fs.writeFile(
+              "./inicializacion_eventos/imagenes/imagenOferta.jpg",
+              archivoBytes
+            );
+          } catch (err) {
+            console.error("Error al descargar la imagen:", err);
+          }
+
         const attachment = new AttachmentBuilder("./inicializacion_eventos/imagenes/imagenOferta.jpg");
         await channel.send({
           embeds: [
