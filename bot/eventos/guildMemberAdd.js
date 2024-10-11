@@ -17,7 +17,7 @@ module.exports = {
         .setAuthor({ name: member.user.username, iconURL: member.user.displayAvatarURL({ dynamic: true }) })
         .setThumbnail(client.user.displayAvatarURL())
 
-        await channel.send({ content: `Se ha unido <@${member.user.id}>`, embeds: [embedBienvenida] })
+        await channel.send({ content: `¡Se ha unido <@${member.user.id}>!`, embeds: [embedBienvenida] })
 
     }
 }
