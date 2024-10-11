@@ -1,10 +1,8 @@
 const { TelegramClient } = require("telegram");
 const { StoreSession } = require("telegram/sessions");
-const fs = require("fs").promises;
 const storeSession = new StoreSession("./inicializacion_eventos/telegram/");
 const Codigo = require("../schemas/codigo.js");
 const Codigo_ant = require("../schemas/codigo_antiguo.js");
-const Ofertas = require("../schemas/ofertas.js");
 // Función para esperar hasta que un nuevo código sea diferente o esté disponible
 
 const waitForNewCode = async () => {
@@ -98,24 +96,6 @@ const busquedaMensaje = async (telegram) => {
   if (!mensajeMasReciente) {
     console.log("No se encontraron mensajes recientes.");
     return;
-  }
-
-  // Verificar si el mensaje más reciente contiene una imagen
-  if (mensajeMasReciente.media && mensajeMasReciente.media.photo) {
-    try {
-      // Descargar el archivo de la imagen usando `downloadMedia`
-      const archivoBytes = await telegram.downloadMedia(
-        mensajeMasReciente.media
-      );
-
-      // Guardar la imagen en el sistema de archivos de manera asíncrona
-      await fs.writeFile(
-        "./inicializacion_eventos/imagenes/imagenOferta.jpg",
-        archivoBytes
-      );
-    } catch (err) {
-      console.error("Error al descargar la imagen:", err);
-    }
   }
 
   return mensajeMasReciente;
