@@ -6,7 +6,6 @@ module.exports = {
 
         const guild = await client.guilds.cache.get(process.env.GUILD_ID);
         const channel = await client.channels.cache.get(process.env.BIENVENIDA_CANAL);
-        const user = await client.users.cache.get(member.id);
 
         const embedBienvenida = new EmbedBuilder()
         .setColor("#fe81fe")
@@ -17,7 +16,7 @@ module.exports = {
         .setAuthor({ name: member.user.username, iconURL: member.user.displayAvatarURL({ dynamic: true }) })
         .setThumbnail(client.user.displayAvatarURL())
 
-        await channel.send({ content: `¡Se ha unido <@${member.user.id}>!`, embeds: [embedBienvenida] })
+        await channel.send({ content: `${member}`, embeds: [embedBienvenida] })
 
     }
 }
