@@ -15,7 +15,7 @@ module.exports = {
 
         await interaction.channel.send({ embeds: [embed.categorias_imagen()], components: [boton.botones_categorias()], ephemeral: false });
         await interaction.channel.send({ embeds: [embed.curso()], components: [boton.botones_curso()], ephemeral: false });
-        await interaction.channel.send({ embeds: [embed.comunidad()], components: [boton.botones_comunidad()], ephemeral: false });
+       // await interaction.channel.send({ embeds: [embed.comunidad()], components: [boton.botones_comunidad()], ephemeral: false });
         await interaction.channel.send({ embeds: [embed.genero()], components: [boton.botones_genero()], ephemeral: false });
         await interaction.channel.send({ embeds: [embed.minecraft()], components: [boton.botones_minecraft()], ephemeral: false });
     }
