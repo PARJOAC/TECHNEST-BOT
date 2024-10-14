@@ -62,48 +62,38 @@ const moment = require("moment-timezone");
 const fs = require("fs").promises;
 
 client.once(Events.ClientReady, async (client) => {
-  /*
+  
   let telegram = await telegramClientInit();
 
   setInterval(async () => {
     try {
-      // Obtener el mensaje más reciente
       const mensaje = await busquedaMensaje(telegram);
 
-      // Verificar si `mensaje` es válido
       if (!mensaje) {
         return;
       }
 
-      // Buscar la última oferta en la base de datos
       const lastOfert = await Ofertas.findOne({}).exec();
       const lastOfertId = mensaje.id;
 
-      // Si la oferta más reciente ya está registrada, no hacer nada
       if (lastOfert.oferta === lastOfertId) {
-        return; // Sale de la función si la oferta ya fue registrada
+        return;
       }
 
-      // Si la oferta es nueva, procesar la fecha y hora
       const timestamp = mensaje.date * 1000;
-      const timestampAjustado = moment(timestamp).add(2, 'hours');  // Sumar 2 horas al timestamp
+      const timestampAjustado = moment(timestamp).add(2, 'hours');
 
-      const fecha = timestampAjustado.format("DD/MM/YYYY");  // Obtener la fecha ajustada
-      const hora = timestampAjustado.format("HH:mm");        // Obtener la hora ajustada
+      const fecha = timestampAjustado.format("DD/MM/YYYY");
+      const hora = timestampAjustado.format("HH:mm");
 
-
-      // Obtener el canal de Discord donde se enviarán las ofertas
       const channel = client.channels.cache.get(process.env.OFERTAS_CANAL);
 
-      // Enviar el mensaje al canal con la oferta más reciente y la imagen adjunta
       if (mensaje.media && mensaje.media.photo) {
           try {
-            // Descargar el archivo de la imagen usando `downloadMedia`
             const archivoBytes = await telegram.downloadMedia(
               mensaje.media
             );
       
-            // Guardar la imagen en el sistema de archivos de manera asíncrona
             await fs.writeFile(
               "./inicializacion_eventos/imagenes/imagenOferta.jpg",
               archivoBytes
@@ -142,7 +132,6 @@ client.once(Events.ClientReady, async (client) => {
         });
       }
 
-      // Actualizar la base de datos con el nuevo ID de la oferta
       if (lastOfert) {
         lastOfert.oferta = lastOfertId;
         await lastOfert.save();
@@ -153,7 +142,7 @@ client.once(Events.ClientReady, async (client) => {
       console.error("Error en la verificación/envío de ofertas:", error);
     }
   }, 5000);
-*/
+  
   client.user.setPresence({
     activities: [
       {
@@ -273,7 +262,7 @@ async function main(client) {
     .then(console.log("Sesión iniciada."));
   //await Errores();
   await Mongo();
-  //await KeepAlive();
+  await KeepAlive();
   await Eventos(client);
   await Slash(client);
 }
