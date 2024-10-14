@@ -39,7 +39,7 @@ module.exports = {
   ]),
   botones_curso: () => createButtons([
     { id: "PRES", label: "Presencial", style: ButtonStyle.Secondary },
-    { id: "SEMIPRES", label: "Presencial", style: ButtonStyle.Secondary },
+    { id: "SEMI", label: "Presencial", style: ButtonStyle.Secondary },
     { id: "ONL", label: "Online", style: ButtonStyle.Secondary },
   ]),
   botones_comunidad: () => createButtons([
@@ -47,7 +47,7 @@ module.exports = {
     { id: "CAN", label: "Canarias", style: ButtonStyle.Secondary },
     { id: "CANT", label: "Cantabria", style: ButtonStyle.Secondary },
     { id: "CATA", label: "Cataluña", style: ButtonStyle.Secondary },
-    { id: "VALENCIANA", label: "Comunidad Valenciana", style: ButtonStyle.Secondary },
+    { id: "VAL", label: "Comunidad Valenciana", style: ButtonStyle.Secondary },
     { id: "GAL", label: "Galicia", style: ButtonStyle.Secondary },
     { id: "ISL", label: "Islas Baleares", style: ButtonStyle.Secondary },
     { id: "RIOJA", label: "La Rioja", style: ButtonStyle.Secondary },
