@@ -38,9 +38,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -57,9 +55,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -76,9 +72,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -95,9 +89,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -114,9 +106,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -133,9 +123,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -152,9 +140,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -171,9 +157,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -190,9 +174,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -210,9 +192,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -229,9 +209,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -248,9 +226,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -268,9 +244,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -287,9 +261,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -306,9 +278,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -325,9 +295,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -344,9 +312,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -363,9 +329,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -382,9 +346,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -401,9 +363,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -420,9 +380,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -439,9 +397,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -458,9 +414,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -477,9 +431,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -496,9 +448,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -515,9 +465,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -534,9 +482,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -553,9 +499,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -572,9 +516,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -591,9 +533,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -610,9 +550,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -630,9 +568,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -649,9 +585,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
@@ -669,9 +603,7 @@ module.exports = {
           ephemeral: true,
         });
       } else {
-        const verifyUser = interaction.guild.members.cache.get(
-          interaction.user.id
-        );
+        const verifyUser = client.users.cache.get(interaction.member.user.id);
         verifyUser.roles.add(rol);
         await interaction.reply({
           content: "¡Rol asignado con éxito!",
