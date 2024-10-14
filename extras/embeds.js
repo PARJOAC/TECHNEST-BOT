@@ -24,5 +24,5 @@ module.exports = {
   curso: () => createMessage("¡Reacciona para obtener tus roles!", "Reacciona al botón correspondiente para obtener o eliminar los roles pertinentes. ¡Buen curso!\n\n**🏠 Presencial\n👀 SemiPresencial\n💻 Online**"),
   comunidad: () => createMessage("¡Reacciona para obtener tus roles!", "Reacciona al botón correspondiente para obtener o eliminar los roles pertinentes. ¡Buen curso!\n\n**Andalucía\nCanarias\nCantabria\nCataluña\nComunidad Valenciana\nGalicia\nIslas Baleares\nLa Rioja\nNavarra\nPaís Vasco\nAragón\nCastilla-La Mancha\nastilla y León\nMadrid\nExtremadura\nCeuta\nMelilla\nMurcia\nAsturias**"),
   genero: () => createMessage("¡Reacciona para obtener tus roles!", "Reacciona al botón correspondiente para obtener o eliminar los roles pertinentes. ¡Buen curso!\n\n**👦🏻 Hombre\n👧🏻 Mujer**"),
-  minecraft: () => createMessage("¡Reacciona para obtener tus roles!", "Reacciona al botón correspondiente para acceder al servidor de Minecraft.\n\n**💚Minecraft**")
+  minecraft: () => createMessage("¡Reacciona para obtener tus roles!", "Reacciona al botón correspondiente para acceder al servidor de Minecraft.\n\n**💚 Minecraft**")
 };
