@@ -42,6 +42,7 @@ module.exports = {
     { id: "SEMIPRESENCIAL", emoji: "👀", style: ButtonStyle.Secondary },
     { id: "ONLINE", emoji: "💻", style: ButtonStyle.Secondary },
   ]),
+  /*
   botones_comunidad: () => createButtons([
     { id: "ANDALUCIA", label: "Andalucia", style: ButtonStyle.Secondary },
     { id: "CANARIAS", label: "Canarias", style: ButtonStyle.Secondary },
@@ -62,7 +63,7 @@ module.exports = {
     { id: "MELILLA", label: "Melilla", style: ButtonStyle.Secondary },
     { id: "MURCIA", label: "Murcia", style: ButtonStyle.Secondary },
     { id: "ASTURIAS", label: "Asturias", style: ButtonStyle.Secondary },
-  ]),
+  ]),*/
   botones_genero: () => createButtonsEmoji([
     { id: "HOMBRE", emoji: "👦🏻", style: ButtonStyle.Secondary },
     { id: "MUJER", emoji: "👧🏻", style: ButtonStyle.Secondary },
