@@ -4,7 +4,6 @@ function createMessage(title, description) {
   return new EmbedBuilder()
     .setDescription(description)
     .setColor("Purple")
-    .setTimestamp()
     .setTitle(title);
 }
 
@@ -12,17 +11,16 @@ function createMessageImage(title, description, image) {
   return new EmbedBuilder()
     .setImage(image)
     .setColor("Purple")
-    .setTimestamp()
     .setDescription(description)
     .setTitle(title);
 }
 
 module.exports = {
   categorias_imagen: () => createMessageImage(
-    "¡Reacciona para obtener tus roles!", "Reacciona al botón correspondiente para obtener o eliminar los roles pertinentes. ¡Buen curso!\n\n**💻 SMR\n📡 TELECO\n🌐 ASIR\n☕ DAW\n🎲 DAM\n👺 Ciberseguridad\n🤖 IA & BG\n🎮 Desarrollo Videojuegos y VR\n🎥 Audiovisuales**" , "https://cdn.discordapp.com/attachments/1107574606379880459/1250048048944648334/Banner_de_perfil_para_Discord_arte_pixelado_magenta_violeta.png?ex=670da837&is=670c56b7&hm=29662067399cf7d3925db2d1148f832ca844e6dcc9d9a4a7f05d61f477befa3c&"
+    "¡Reacciona para obtener tus roles!", "Reacciona al botón correspondiente para obtener o eliminar los roles pertinentes. ¡Buen curso!\n\n**💻 SMR\n📡 TELECO\n🌐 ASIR\n☕ DAW\n🎲 DAM\n👺 Ciberseguridad\n🤖 IA & BG\n🎮 Desarrollo Videojuegos y VR\n🎥 Audiovisuales**\n\nDEBES ESCOGER MÍNIMO 1 ROL OBLIGATORIAMENTE PARA QUE SE TE DESBLOQUEEN LOS CANALES." , "https://cdn.discordapp.com/attachments/1107574606379880459/1250048048944648334/Banner_de_perfil_para_Discord_arte_pixelado_magenta_violeta.png?ex=670da837&is=670c56b7&hm=29662067399cf7d3925db2d1148f832ca844e6dcc9d9a4a7f05d61f477befa3c&"
   ),
   curso: () => createMessage("¡Reacciona para obtener tus roles!", "Reacciona al botón correspondiente para obtener o eliminar los roles pertinentes. ¡Buen curso!\n\n**🏠 Presencial\n👀 SemiPresencial\n💻 Online**"),
-  comunidad: () => createMessage("¡Reacciona para obtener tus roles!", "Reacciona al botón correspondiente para obtener o eliminar los roles pertinentes. ¡Buen curso!\n\n**Andalucía\nCanarias\nCantabria\nCataluña\nComunidad Valenciana\nGalicia\nIslas Baleares\nLa Rioja\nNavarra\nPaís Vasco\nAragón\nCastilla-La Mancha\nastilla y León\nMadrid\nExtremadura\nCeuta\nMelilla\nMurcia\nAsturias**"),
+  comunidad: () => createMessage("¡Reacciona para obtener tus roles!", "Reacciona al botón correspondiente para obtener o eliminar los roles pertinentes. ¡Buen curso!\n\n**<:andalucia:1295425061439799316> Andalucía\n<:canarias:1295428474508415057> Canarias\n<:cantabria:1295428472386355245> Cantabria\n<:catalua:1295428471119544381> Cataluña\n<:valencia:1295428469571846315> Comunidad Valenciana\n<:galicia:1295427186408558642> Galicia\n<:IslasBaleares:1295427185045274705> Islas Baleares\n<:LaRioja:1295427183405432934> La Rioja\n<:Navarra:1295427181429657711> Navarra\n<:PasVasco:1295427179865182298> País Vasco\n<:Aragn:1295427178569138317> Aragón\n<:CastillaLaMancha:1295427177017380956> Castilla-La Mancha\n<:CastillayLen:1295427174953783337> Castilla y León\n<:Madrid:1295426641081798687> Madrid\n<:Extremadura:1295426639521386627> Extremadura\n<:Ceuta:1295426638321942588> Ceuta\n<:Melilla:1295426636648419488> Melilla\n<:Murcia:1295426635050520636> Murcia\n<:Asturias:1295426633473200268> Asturias**"),
   genero: () => createMessage("¡Reacciona para obtener tus roles!", "Reacciona al botón correspondiente para obtener o eliminar los roles pertinentes. ¡Buen curso!\n\n**👦🏻 Hombre\n👧🏻 Mujer**"),
   minecraft: () => createMessage("¡Reacciona para obtener tus roles!", "Reacciona al botón correspondiente para acceder al servidor de Minecraft.\n\n**💚 Minecraft**")
 };
