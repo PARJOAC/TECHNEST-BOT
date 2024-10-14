@@ -595,21 +595,48 @@ module.exports = {
     }
 
     if (interaction.isButton() && interaction.customId == "MINECRAFT") {
-      const rol = interaction.guild.roles.cache.get("1280265326168244255");
-      if (interaction.member.roles.cache.has(rol.id)) {
-        await interaction.member.roles.remove(rol);
-        await interaction.reply({
-          content: "¡Se te ha eliminado el rol!",
-          ephemeral: true,
-        });
-      } else {
-        
-        await interaction.member.roles.add(rol);;
-        await interaction.reply({
-          content: "¡Rol asignado con éxito!",
-          ephemeral: true,
-        });
-      }
+  const rol = interaction.guild.roles.cache.get("1280265326168244255");
+
+  if (!rol) {
+    console.error("El rol no se encontró.");
+    return interaction.reply({
+      content: "No se encontró el rol. Contacta con un administrador.",
+      ephemeral: true,
+    });
+  }
+
+  if (interaction.member.roles.cache.has(rol.id)) {
+    try {
+      await interaction.member.roles.remove(rol);
+      console.log(`Rol ${rol.name} eliminado para ${interaction.member.user.tag}`);
+      await interaction.reply({
+        content: "¡Se te ha eliminado el rol!",
+        ephemeral: true,
+      });
+    } catch (error) {
+      console.error(`Error eliminando rol: ${error}`);
+      await interaction.reply({
+        content: "Hubo un error al eliminar el rol.",
+        ephemeral: true,
+      });
     }
+  } else {
+    try {
+      await interaction.member.roles.add(rol);
+      console.log(`Rol ${rol.name} asignado a ${interaction.member.user.tag}`);
+      await interaction.reply({
+        content: "¡Rol asignado con éxito!",
+        ephemeral: true,
+      });
+    } catch (error) {
+      console.error(`Error asignando rol: ${error}`);
+      await interaction.reply({
+        content: "Hubo un error al asignar el rol.",
+        ephemeral: true,
+      });
+    }
+  }
+}
+
   },
 };
