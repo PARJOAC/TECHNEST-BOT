@@ -62,6 +62,7 @@ const moment = require("moment-timezone");
 const fs = require("fs").promises;
 
 client.once(Events.ClientReady, async (client) => {
+  /*
   let telegram = await telegramClientInit();
 
   setInterval(async () => {
@@ -152,7 +153,7 @@ client.once(Events.ClientReady, async (client) => {
       console.error("Error en la verificación/envío de ofertas:", error);
     }
   }, 5000);
-
+*/
   client.user.setPresence({
     activities: [
       {
@@ -272,7 +273,7 @@ async function main(client) {
     .then(console.log("Sesión iniciada."));
   //await Errores();
   await Mongo();
-  await KeepAlive();
+  //await KeepAlive();
   await Eventos(client);
   await Slash(client);
 }
