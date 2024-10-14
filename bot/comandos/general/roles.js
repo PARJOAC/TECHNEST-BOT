@@ -13,7 +13,7 @@ module.exports = {
 
         if(interaction.member.id !== "714376484139040809") return interaction.reply({ content: "No tienes permisos para ejecutar este comando.", ephemeral: true });
 
-        await interaction.channel.send({ embeds: [embed.categorias_imagen()], components: [boton.botones_categorias()], ephemeral: false });
+        await interaction.channel.send({ embeds: [embed.categorias_imagen()], components: [boton.botones_categorias1(), boton.botones_categorias2()], ephemeral: false });
         await interaction.channel.send({ embeds: [embed.curso()], components: [boton.botones_curso()], ephemeral: false });
        // await interaction.channel.send({ embeds: [embed.comunidad()], components: [boton.botones_comunidad()], ephemeral: false });
         await interaction.channel.send({ embeds: [embed.genero()], components: [boton.botones_genero()], ephemeral: false });
