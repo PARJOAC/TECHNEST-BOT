@@ -13,15 +13,14 @@ module.exports = {
 
         if(interaction.member.id !== "714376484139040809") return interaction.reply({ content: "No tienes permisos para ejecutar este comando.", ephemeral: true });
 
-        setTimeout(async () => {
-            await interaction.channel.send({ embeds: [embed.categorias_imagen()], components: [boton.botones_categorias1(), boton.botones_categorias2()], ephemeral: false });
-        }, 2000).then(async() =>setTimeout(async () => {
+        await interaction.channel.send({ embeds: [embed.categorias_imagen()], components: [boton.botones_categorias1(), boton.botones_categorias2()], ephemeral: false });
+        .then(async() =>
             await interaction.channel.send({ embeds: [embed.curso()], components: [boton.botones_curso()], ephemeral: false });
-        }, 2000)).then(async() =>setTimeout(async () => {
+        ).then(async() =>
             await interaction.channel.send({ embeds: [embed.genero()], components: [boton.botones_genero()], ephemeral: false });
-        }, 2000)).then(async() =>setTimeout(async () => {
+        ).then(async() =>
             await interaction.channel.send({ embeds: [embed.minecraft()], components: [boton.botones_minecraft()], ephemeral: false });
-        }, 2000))
+        )
         
         
        // await interaction.channel.send({ embeds: [embed.comunidad()], components: [boton.botones_comunidad()], ephemeral: false });
