@@ -3,7 +3,7 @@ const { EmbedBuilder } = require("discord.js");
 function createMessage(title, description) {
   return new EmbedBuilder()
     .setDescription(description)
-    .setColor("Blue")
+    .setColor("Purple")
     .setTimestamp()
     .setTitle(title);
 }
