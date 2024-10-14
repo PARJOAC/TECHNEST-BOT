@@ -33,14 +33,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1107572341644480562");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -50,14 +50,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1107572397588107294");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -67,14 +67,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1107572531122155520");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -84,14 +84,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1107572594552619038");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -101,14 +101,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1107572573052600390");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -118,14 +118,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1107658851420999832");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -135,14 +135,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1249719462731452506");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -152,14 +152,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1249720896386502689");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -169,14 +169,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1107573065832992798");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -187,14 +187,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1268294556558819561");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -204,14 +204,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1268294590528622755");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -221,14 +221,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1268294630500466860");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -239,14 +239,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1267939687436255297");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -256,14 +256,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1267939748748460101");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -273,14 +273,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1267939783569576001");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -290,14 +290,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1267939818235629578");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -307,14 +307,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1267940230984368290");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -324,14 +324,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1267939847058882661");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -341,14 +341,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1267939875294937139");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -358,14 +358,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1267939917905002642");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -375,14 +375,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1267939952994549780");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -392,14 +392,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1267939988398669877");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -409,14 +409,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1267940074562260992");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -426,14 +426,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1267940126122573874");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -443,14 +443,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1267940186164301854");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -460,14 +460,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1267940326979403776");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -477,14 +477,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1267940277973422111");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -494,14 +494,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1267940354750025832");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -511,14 +511,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1267940385703985154");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -528,14 +528,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1267940414892015746");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -545,14 +545,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1267940446328459354");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -563,14 +563,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1277609733884477460");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -580,14 +580,14 @@ module.exports = {
       const rol = interaction.guild.roles.cache.get("1277609779535151239");
       if (interaction.member.roles.cache.has(rol.id)) {
         await interaction.member.roles.remove(rol);
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Se te ha eliminado el rol!",
           ephemeral: true,
         });
       } else {
         
         await interaction.member.roles.add(rol);;
-        await interaction.reply({
+        await interaction.channel.send({
           content: "¡Rol asignado con éxito!",
           ephemeral: true,
         });
@@ -599,7 +599,7 @@ module.exports = {
 
   if (!rol) {
     console.error("El rol no se encontró.");
-    return interaction.reply({
+    return interaction.channel.send({
       content: "No se encontró el rol. Contacta con un administrador.",
       ephemeral: true,
     });
@@ -609,13 +609,13 @@ module.exports = {
     try {
       await interaction.member.roles.remove(rol);
       console.log(`Rol ${rol.name} eliminado para ${interaction.member.user.tag}`);
-      await interaction.reply({
+      await interaction.channel.send({
         content: "¡Se te ha eliminado el rol!",
         ephemeral: true,
       });
     } catch (error) {
       console.error(`Error eliminando rol: ${error}`);
-      await interaction.reply({
+      await interaction.channel.send({
         content: "Hubo un error al eliminar el rol.",
         ephemeral: true,
       });
@@ -624,13 +624,13 @@ module.exports = {
     try {
       await interaction.member.roles.add(rol);
       console.log(`Rol ${rol.name} asignado a ${interaction.member.user.tag}`);
-      await interaction.reply({
+      await interaction.channel.send({
         content: "¡Rol asignado con éxito!",
         ephemeral: true,
       });
     } catch (error) {
       console.error(`Error asignando rol: ${error}`);
-      await interaction.reply({
+      await interaction.channel.send({
         content: "Hubo un error al asignar el rol.",
         ephemeral: true,
       });
