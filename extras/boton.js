@@ -26,12 +26,14 @@ module.exports = {
   botones_ayuda: () => createButtonsEmoji([
     { id: "GENERAL", emoji: "🌎", style: ButtonStyle.Secondary },
   ]),
-  botones_categorias: () => createButtonsEmoji([
+  botones_categorias1: () => createButtonsEmoji([
     { id: "SMR", emoji: "💻", style: ButtonStyle.Secondary },
     { id: "TELECO", emoji: "📡", style: ButtonStyle.Secondary },
     { id: "ASIR", emoji: "🌐", style: ButtonStyle.Secondary },
     { id: "DAW", emoji: "☕", style: ButtonStyle.Secondary },
     { id: "DAM", emoji: "🎲", style: ButtonStyle.Secondary },
+    ]),
+    botones_categorias2: () => createButtonsEmoji([
     { id: "CIBERSEGURIDAD", emoji: "👺", style: ButtonStyle.Secondary },
     { id: "IABG", emoji: "🤖", style: ButtonStyle.Secondary },
     { id: "VR", emoji: "🎮", style: ButtonStyle.Secondary },
