@@ -258,7 +258,7 @@ module.exports = {
         });
       }
     }
-
+/*
     if (interaction.isButton() && interaction.customId == "ANDALUCIA") {
       const rol = interaction.guild.roles.cache.get("1267939687436255297");
       if (interaction.member.roles.cache.has(rol.id)) {
@@ -620,7 +620,7 @@ module.exports = {
         });
       }
     }
-
+*/
     if (interaction.isButton() && interaction.customId == "HOMBRE") {
       const rol = interaction.guild.roles.cache.get("1277609733884477460");
       if (interaction.member.roles.cache.has(rol.id)) {
