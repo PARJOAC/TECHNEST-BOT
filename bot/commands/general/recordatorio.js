@@ -1,6 +1,6 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const moment = require('moment-timezone');
-const Recordatorio = require('../../../schemas/recordatorios.js');
+const Recordatorio = require('../../../mongoDB/recordatorios.js');
 
 module.exports = {
     data: new SlashCommandBuilder()

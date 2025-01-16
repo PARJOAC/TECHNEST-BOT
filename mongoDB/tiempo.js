@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 
 const Tiempo = new mongoose.Schema({
-  Valor: { type: Number }
+  userId: { type: String, unique: true},
+  valor: { type: Date }
 });
 
 module.exports = mongoose.model('Tiempo', Tiempo);
